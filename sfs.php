@@ -148,6 +148,9 @@ if(!class_exists('SFS_Slider')) {
 
 		//$data = get_post_meta($post->ID,"sfs_sliders_meta_box",true);
 
+		if(get_post_status()!='auto-draft')
+		{
+
 		$data = get_post_custom($post->ID);
 		$data = $data['sfs'];
 
@@ -186,6 +189,20 @@ if(!class_exists('SFS_Slider')) {
 	} 
 
 	$output .='</div></div>';
+
+	}
+	else
+	{
+		$output ='
+			<div class="sfs-admin-sliders-active">
+				<H2>Active sliders</H2>
+				<div class="sfs-admin-rows-active sfs-admin-sliders-group">
+				</div>
+			</div>';
+
+			$data = 0;
+	}
+
 	echo $output;
 
 	$args = array(
