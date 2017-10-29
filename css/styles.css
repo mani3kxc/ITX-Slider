@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Playfair+Display');
+
+
+.sfs-container {
+  height: 360px;
+  width: 100%;
+  position: relative;
+  display: block;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.sfs-container UL {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.sfs-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('http://paralotniarz.com.pl/sites/all/themes/stormy/images/grid-overlay.png');
+  z-index:10;
+}
+
+.sfs-slide {
+  display: block;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.sfs-slide .sfs-slide-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0px;
+  left:0px;
+  opacity: 0;
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+
+}
+
+.zoomin {
+  transition-duration: 6s;
+  transform: scale(1.1);
+}
+
+.sfs-slide .sfs-slide-text {
+  
+  position: absolute;
+  width: 100%;
+  top:50%;
+  transform: translate(0,-50%);
+  opacity: 0;
+  transition-duration: 1s;
+  
+}
+
+.sfs-slide .sfs-slide-text H1 {
+  
+  text-align: center;
+  color: white;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sfs-slide .sfs-slide-text HR {
+  display: block;
+  width: 25%;
+  max-width: 200px;
+  height: 0px;
+  border: 1px solid #ffffff;
+}
+
+.sfs-slide .sfs-slide-text P {
+  display: block;
+  width: 50%;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: "Playfair Display";
+}
+
+
+.sfs-slide-active .sfs-slide-background {
+  top:0px;
+  left:0px;
+  opacity:1;
+  transition: opacity 0s ease-out, transform 6s;
+  transform: scale(1);
+  z-index: 8;
+}
+
+.sfs-slide-active .sfs-slide-text {
+  opacity:1;
+  z-index: 11;
+}
+
+.sfs-slide-active SPAN {
+}
+
+.sfs-slide-old .sfs-slide-background {
+  transition-property: opacity, transform;
+  transition-duration: 2s, 2s;
+
+  opacity:0;
+  transform: scale(1.1);
+
+  z-index:9;
+}
+
+.sfs-slide-old .sfs-slide-text {
+  opacity:0;
+  z-index:12;
+}
+
+
+
+
+.upload_image {
+  width: 200px;
+  height: auto;
+}
+
+
+DIV.fs-preview-container {
+  display: block;
+  width: 50%;
+  padding-bottom: 15%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+DIV.fs-preview {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #dedede;
+}
+
+DIV.fs-inputs {
+  display: block;
+  width:50%;
+  margin: 0 auto;
+}
+
+/**
+ * Page Builder Admin CSS
+**/
+
+#fx-page-builder{
+    margin: 20px 0;
+}
+
+.sfs-admin-sliders-active {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Rows */
+.sfs-admin-sliders-group{
+  min-height: 200px;
+  background: #fafafa;
+  border: 2px dotted #eee;
+}
+
+.sfs-admin-sliders-group:after
+{
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.sfs-admin-rows-message{
+    border: 2px dashed #ccc;
+    padding: 10px 20px;
+    text-align: center;
+}
+/* Buttons */
+.sfs-admin-actions{
+    margin-bottom: 30px;
+}
+/* Row */
+.sfs-admin-row{
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 2px;
+    width: 200px;
+    float: left;
+}
+
+
+
+#poststuff .sfs-admin-row-title{
+  display: block;
+  margin: 0px auto;
+  padding: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sfs-admin-row-title A {
+  text-decoration: none;
+  color: inherit;
+}
+#poststuff .sfs-admin-row-title:after{
+    content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.sfs-admin-handle{
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    cursor: move;
+}
+
+.sfs-admin-edit{
+    padding: 10px;
+    border-left; 1px solid #ccc;
+    float: right;
+    cursor: pointer;
+}
+#poststuff .sfs-admin-row-title-text{
+    padding: 10px;
+    display: inline-block;
+}
+
+.sfs-admin-row-background {
+  height: 150px;
+  background-size: contain;
+  background-position: center;
+}
+.sfs-admin-remove{
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    float: right;
+    cursor: pointer;
+}
+.sfs-admin-remove:hover{
+    background: red;
+    color: #fff;
+}
+.sfs-admin-row-fields{
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+.sfs-admin-row-fields:after{
+    content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.sfs-admin-row-fields textarea{
+    width: 100%;
+    height: 100px;
+}
+
+/* Templates */
+.sfs-admin-templates{
+    display: none;
+}
