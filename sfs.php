@@ -61,6 +61,7 @@ Domain Path:  /languages
 include_once( plugin_dir_path( __FILE__ ) . 'lib/advanced-custom-fields/acf.php');
 include_once( plugin_dir_path( __FILE__ ) . '/custom_post_types/sfs_custom_post_types.php');
 include_once( plugin_dir_path( __FILE__ ) . '/custom_post_types/sfs_custom_post_types.php');
+include_once( plugin_dir_path( __FILE__ ) . '/custom_post_types/sfs_custom_post_types.php');
 
 
 if(!class_exists('SFS_Slider')) {
