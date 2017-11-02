@@ -433,8 +433,7 @@ if(!class_exists('SFS_Slider')) {
 
 			if($header_slider_ID)
 				echo do_shortcode( "[sfslider id=\"$header_slider_ID\"]", false );			
-			else 
-				echo "NO SLIDER TODAY";
+
 		}
 
 
