@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"b",
+				"border-box"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"bacgr",
+				"background-position"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"tran",
+				"translate()"
+			],
+			[
 				"print",
 				"print_r"
 			],
@@ -18,10 +50,6 @@
 			[
 				"sfs-admi",
 				"sfs-admin-rows"
-			],
-			[
-				"bac",
-				"background-attachment"
 			],
 			[
 				"sfs-admin-title",
@@ -140,10 +168,6 @@
 				"background"
 			],
 			[
-				"back",
-				"background"
-			],
-			[
 				"font",
 				"font-size"
 			],
@@ -254,10 +278,6 @@
 			[
 				"paddin",
 				"padding-bottom"
-			],
-			[
-				"tran",
-				"transition-duration"
 			],
 			[
 				"ds",
@@ -408,14 +428,6 @@
 				"background-attachment"
 			],
 			[
-				"box",
-				"box-shadow"
-			],
-			[
-				"a",
-				"absolute"
-			],
-			[
 				"wra",
 				"word-wrap"
 			],
@@ -502,23 +514,89 @@
 			[
 				"on",
 				"onUnloaded\tmethod"
-			],
-			[
-				"con",
-				"console\tvar"
-			],
-			[
-				"un",
-				"onUnloaded\tmethod"
-			],
-			[
-				"On",
-				"OnInit\talias"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/C/xampp/htdocs/mazedesign/index.html",
+			"settings":
+			{
+				"buffer_size": 495,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/PostgreSQL/data/pg96/postgresql.conf",
+			"settings":
+			{
+				"buffer_size": 21865,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/mazedesign/styles.css",
+			"settings":
+			{
+				"buffer_size": 1770,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');\n\nbody {\n\tmargin: 0px;\n\tpadding: 0px;\n\tfont-family: 'Montserrat', sans-serif;\n}\n\n.header-wrap {\n\twidth: 100%;\n\theight: 100vh;\n}\n\n.header {\n\tdisplay: none;\n}\n\n#maze {\n\tcolor: #333333;\n\tfont-family: 'Montserrat', sans-serif;\n\tfont-size: 64px;\n\tmargin-bottom: 10px;\n\tdisplay: block;\n\tfont-weight: 100;\n\tborder-top: 1px solid #999999;\n\tborder-bottom: 1px solid #999999;\n}\n\n.square-container {\n\n\tdisplay: block;\n\twidth: 200px;\n\theight: 200px;\n\tmargin: 0 auto;\n\tposition: absolute;\n\ttop: 300px;\n\tleft: calc(50% + 1px);\n\ttransform: translateX(-50%);\n}\n\n.square {\n\tbox-sizing: border-box;\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\twidth: 100px;\n\theight: 100px;\n\tfloat: left;\n}\n\n.square-top {\n\tbackground: #dedede;\n\tdisplay: block;\n\twidth: 50%;\n\theight: 300px;\n\tmargin: 0px 0px auto 0px;\n}\n\n.square-bottom {\n\tbackground: #dedede;\n\tdisplay: block;\n\tposition: absolute;\n\ttop: 400px;\n\twidth: calc(50% - 101px);\n\theight: calc(100vh - 400px);\n\tleft: calc(50% + 101px);\n\tmargin: 0px 0px auto 0px;\n}\n\n.tl {\n\tborder-bottom: 1px solid #dedede;\n\tborder-right: 1px solid #dedede;\n}\n\n.tr {\n\tborder-bottom: 1px solid #dedede;\n\tbackground: rgba(220,220,220,0.8);\n}\n\n.bl {\n\tborder-right: 1px solid #dedede;\n}\n\n.br:after {\n\tcontent: \".\";\n\tclear: both;\n}\n\n.square H1 {\n\tcolor: #cacaca;\n\tfont-family: 'Montserrat', sans-serif;\n\tfont-size: 56px;\n\tmargin: 0px;\n\tpadding: 0px;\n\tdisplay: block;\n\tfont-weight: 100;\n}\n\n.tr H1 {\n\tcolor: #fafafa;\n}\n\n.square H1 > SPAN {\n\tcolor: #ffffff;\n\tdisplay: inline-block;\n\ttransform: rotate(180deg);\n\tpadding-bottom: 1px;\n\tmargin-right: 3px\n}\n\nH2 {\n\tcolor: #cacaca;\n\tdisplay: block;\n\tfont-family: 'Montserrat', sans-serif;\n\tfont-weight: 100;\n\tfont-size: 32px;\n\ttext-align: center;\n\tmargin-top: 210px;\n\theight: 20px;\n}\n\nP.soon {\n\tcolor: #cacaca;\n\tposition: absolute;\n\tbottom: 0px;\n\tright: 0px;\n\tmargin: 10px;\n\tfont-weight: 100;\n\tfont-size: 32px;\n}\n\nSPAN.visit {\n\tcolor: #cacaca;\n\tmargin: 10px 0px 10px 0px;\n\tfont-weight: 100;\n\tfont-size: 46px;\n}\n",
+			"file": "/C/Users/mani3kxc/AppData/Local/Temp/scp37247/public_html/mazedesign/styles.css",
+			"file_size": 2185,
+			"file_write_time": 131541108757654092,
+			"settings":
+			{
+				"buffer_size": 2048,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\n\n/*\nPlugin Name:  Simple FreeSlider \nPlugin URI:   http://itextreme.pl/plugins/sfs/\nDescription:  Simple responsible slider\nVersion:      1.0\nAuthor:       Mariusz Wiśniowski @ ITextreme.pl\nAuthor URI:   http://itextreme.pl\nLicense:      GPL2\nLicense URI:  https://www.gnu.org/licenses/gpl-2.0.html\nText Domain:  list-builder\nDomain Path:  /languages\n*/\n\n  \n/* !0. TABLE OF CONTENTS */\n\n/*\n  \n  1. HOOKS\n\n  \t1.1 - add_action( 'init', 'sfs_register_shortcodes' );\n\t1.2 - add_filter( 'manage_sfs_slide_posts_columns', 'sfs_slide_column_headers');\n\t1.3 - add_filter( 'manage_sfs_slider_posts_columns', 'sfs_slider_column_headers');\n\t1.4 - add_filter( 'manage_sfs_slider_posts_custom_column', 'sfs_slider_column_data',1,2);\n\t1.5 - add_filter( 'acf/fields/post_object/result', 'sfs_slide_post_object_rows', 10,4);\n\t1.6 - add_action('admin_head-edit.php', 'sfs_register_custom_admin_titles');\n\t1.7 - add_action('wp_enqueue_scripts', 'sfs_add_scripts_and_styles' );\n  \n  2. SHORTCODES\n    2.1 - sfs_register_shortcode()\n    2.2 - sfs_shortcode()\n\n  3. FILTERS\n  \t3.1 - sfs_slider_column_headers()\n  \t3.2 - sfs_slider_column_data()\n  \t3.3 - sfs_register_custom_admin_titles()\n  \t3.4 - sfs_custom_admin_titles()\n  \t3.5 - sfs_slide_column_headers()\n  \t3.6 - sfs_slide_post_object_rows()\n    \n  4. EXTERNAL SCRIPTS\n\n  \t4.1 - sfs_add_scripts_and_styles()\n    \n  5. ACTIONS\n\n  \t5.1 - sfs_get_slides()\n    \n  6. HELPERS\n    \n  7. CUSTOM POST TYPES\n  \n  8. ADMIN PAGES\n  \n  9. SETTINGS\n\n*/\n\ninclude_once( plugin_dir_path( __FILE__ ) . 'lib/advanced-custom-fields/acf.php');\ninclude_once( plugin_dir_path( __FILE__ ) . '/custom_post_types/sfs_custom_post_types.php');\n\n\nif(!class_exists('SFS_Slider')) {\n\n\tclass SFS_Slider {\n\n\t\tprivate $slider_id = 0;\n\t\tprivate $slider_slides = array();\n\n\n\t\tpublic function SFS_Slider()\n\t\t{\n\t\t\t$this->SFS_Slider_Init();\t\t\t\n\t\t}\n\n\t\tpublic function SFS_Slider_Init()\n\t\t{\n\n\t\t\t/* !1. HOOKS */\n\n\t\t\tadd_action( 'init', array(&$this, 'sfs_register_shortcodes' ));\n\n\t\t\t//1.2\n\t\t\tadd_filter( 'manage_sfs_slide_posts_columns', array(&$this, 'sfs_slide_column_headers'));\n\n\t\t\t//1.3\n\t\t\tadd_filter( 'manage_sfs_slider_posts_columns', array(&$this, 'sfs_slider_column_headers'));\n\n\t\t\t//1.4\n\t\t\tadd_filter( 'manage_sfs_slider_posts_custom_column', array(&$this, 'sfs_slider_column_data'),1,2);\n\n\t\t\t//1.5\n\t\t\tadd_filter( 'acf/fields/post_object/result', array(&$this, 'sfs_slide_post_object_rows'), 10,4);\n\n\t\t\t//1.6\n\t\t\tadd_action('admin_head-edit.php', array(&$this, 'sfs_register_custom_admin_titles'));\n\n\t\t\t//1.7\n\t\t\tadd_action('wp_enqueue_scripts', array(&$this, 'sfs_add_scripts_and_styles') );\n\n\t\t\t//1.8\n\t\t\tadd_action('admin_enqueue_scripts', array(&$this, 'sfs_admin_scripts') );\n\n\t\t\t//1.9\n\t\t\tadd_action('admin_menu', array(&$this, 'sfs_admin_menus') ); \n\n\t\t\tadd_action( 'add_meta_boxes', array( $this, 'sfs_slider_add_meta_box' ) );\n\n\t\t\tadd_action( 'save_post', array( $this, 'sfs_save_post'), 10, 2 );\n \n\n\t\t\tadd_filter('acf/settings/path', 'sfs_acf_settings_path');\n\t\t\tadd_filter('acf/settings/dir', 'sfs_acf_settings_dir');\n\t\t\tadd_filter('acf/settings/show_admin', 'sfs_acf_show_admin');\n\t\t\tif(!defined('ACF_LITE')) define('ACF_LITE', true);\n\t\t}\n\n\n \n    /**\n     * Adds the meta box container.\n     */\n    public function sfs_slider_add_meta_box( $post_type ) {\n        // Limit meta box to certain post types.\n        $post_types = array( 'sfs_slider' );\n \n        if ( in_array( $post_type, $post_types ) ) {\n            add_meta_box('sfs_sliders_meta_box', __( 'Choose Sliders', 'sfs_slider' ),\n                array( $this, 'sfs_render_slider_meta_box_content' ),\n                $post_type,\n                'advanced',\n                'high'\n            );\n        }\n\n       // wp_nonce_field( \"sfs_nonce_action\", \"sfs_nonce\" );\n\n    }\n\n  \n\n\n    function sfs_render_slider_meta_box_content()\n\t{\n\t\tglobal $post;\n\n\t\t//$data = get_post_meta($post->ID,\"sfs_sliders_meta_box\",true);\n\n\t\tif(get_post_status()!='auto-draft')\n\t\t{\n\n\t\t$data = get_post_custom($post->ID);\n\t\t$data = $data['sfs'];\n\n  \t\t$args = array(\n  \t\t\t\t'post__in'  => $data,\n    \t\t\t'orderby' => 'post__in',\n    \t\t\t'post_type'  => 'sfs_slide',\n    \t\t\t'meta_key' => '_thumbnail_id');\n\n\t\t$query = new WP_Query($args);\n\n\t\t$output = '<div class=\"sfs-admin-sliders-active\"><H2>Active sliders</H2><div class=\"sfs-admin-rows-active sfs-admin-sliders-group\">\n        \t\t';\n\n    \tif ( $query->have_posts() ) { // you never checked to see if no posts were found\n    \twhile($query->have_posts()) { // alt style syntax doesn't work with most IDEs\n        \t$query->the_post(); // individual statement should be on individual line\n        \t \n        \tif ( has_post_thumbnail() ) { \n        \t\t$output .= '<div class=\"sfs-admin-row\">\n        \t\t\t\t\t\t<div class=\"sfs-admin-row-title\">\n        \t\t\t\t\t\t\t<span class=\"sfs-admin-handle dashicons dashicons-sort\"></span>\n        \t\t\t\t\t\t\t<h2 class=\"sfs-admin-row-title-text\">\n        \t\t\t\t\t\t\t<span class=\"sfs-admin-order\"></span>'. get_the_title() . '</h2><A href=\"'.get_edit_post_link().'\" target=_blank><span class=\"sfs-admin-edit dashicons dashicons-edit\"></span></A>\n        \t\t\t\t\t\t</div>';\n            \t$output .=  '\t<div class=\"sfs-admin-row-background\" style=\\'background-size:cover; background-image: url(\"'.get_the_post_thumbnail_url() . '\");\\'></div>';\n            \t$output.='\n            \t\t\t\t\t<input class=\"sfs-admin-row-input\" name=\"sfs['.get_the_ID().']\" slider-id=\"'.get_the_ID().'\" type=\"hidden\" >\n            \t\t\t\t</div>';\n    \n        \t}\n    \t}\n\n\t} else {\n\t    $output .=  '<p>no slides found</p>';\n\t} \n\n\t$output .='</div></div>';\n\n\t}\n\telse\n\t{\n\t\t$output ='\n\t\t\t<div class=\"sfs-admin-sliders-active\">\n\t\t\t\t<H2>Active sliders</H2>\n\t\t\t\t<div class=\"sfs-admin-rows-active sfs-admin-sliders-group\">\n\t\t\t\t</div>\n\t\t\t</div>';\n\n\t\t\t$data = 0;\n\t}\n\n\techo $output;\n\n\t$args = array(\n\t\t\t\t'post__not_in' => $data,\n    \t\t\t'post_type'  => 'sfs_slide',\n    \t\t\t'meta_key' => '_thumbnail_id',\n    \t\t\t\n    \t\t);\n\n\t$query = new WP_Query($args);\n\n\t\t$output = '<div class=\"sfs-admin-sliders\"><H2>All sliders</H2><div class=\"sfs-admin-rows-all sfs-admin-sliders-group\">\n        \t\t';\n    \tif ( $query->have_posts() ) { // you never checked to see if no posts were found\n    \twhile($query->have_posts()) { // alt style syntax doesn't work with most IDEs\n        \t$query->the_post(); // individual statement should be on individual line\n        \t \n                \tif ( has_post_thumbnail() ) { \n        \t\t$output .= '<div class=\"sfs-admin-row\">\n        \t\t\t\t\t\t<div class=\"sfs-admin-row-title\">\n        \t\t\t\t\t\t\t<span class=\"sfs-admin-handle dashicons dashicons-sort\"></span>\n        \t\t\t\t\t\t\t<h2 class=\"sfs-admin-row-title-text\">\n        \t\t\t\t\t\t\t<span class=\"sfs-admin-order\"></span>'. get_the_title() . '</h2><A href=\"'.get_edit_post_link().'\" target=_blank><span class=\"sfs-admin-edit dashicons dashicons-edit\"></span></A>\n        \t\t\t\t\t\t</div>';\n            \t$output .=  '\t<div class=\"sfs-admin-row-background\" style=\\'background-size:cover; background: url(\"'.get_the_post_thumbnail_url() . '\");\\'></div>';\n            \t$output.='\n            \t\t\t\t\t<input class=\"sfs-admin-row-input\" name=\"_sfs['.get_the_ID().']\" slider-id=\"'.get_the_ID().'\" type=\"hidden\" >\n            \t\t\t\t</div>';\n            \n        \t}\n    \t}\n\n\t} else {\n\t    $output .=  '<p>No other sliders found</p>';\n\t} \n\n\t$output .='</div></div>';\n\techo $output;\n\n\t}\n\n\t\tfunction sfs_save_post( $post_id, $post ){\n\n\t    if (!empty($_POST['sfs']) && is_array($_POST['sfs'])) {\n    \t    delete_post_meta($post_id, 'sfs');\n        \tforeach ($_POST['sfs'] as $sfs => $val) { \t\n            \tadd_post_meta($post_id, 'sfs', $sfs);\n        }\n    }\n\n\n}\n\n\n\t\t/* !2. SHORTCODES */\n\n\t\t// 2.1\n\t\tpublic function sfs_register_shortcodes() {\n\t\t  add_shortcode( 'sfslider', array(&$this, 'sfs_shortcode' ));\n\t\t}\n\n\t\t// 2.2\n\t\tpublic function sfs_shortcode( $args, $content=\"\") {\n\t\t  \n\t\t  // setup our output variable - the form html \n\t\t  $output = '\n\n\t\t\t\t<div class=\"itx-slider-wrap\">\n\t\t\t\t<div class=\"itx-slider\">\n\t\t  \t\t<div class=\"sfs-container\"><div class=\"sfs-overlay\"></div><ul>';\n\n\n\t\t  if(isset($args['id']))\n\t\t  \t$this->slider_id = (int)$args['id'];\n\t\t  else\n\t\t  \t{\n\t\t  \t$output .= \"<LI class='sfs-slide'><P>slider ID error - please check your shortcode</P></LI>\";\n\t\t  \treturn $output;\n\t\t  \t}\n\n\n\t\t  $this->sfs_get_slides();\n\n\t\t  foreach($this->slider_slides as $slide)\n\t\t  {\n\t\t  \t\t\t$image = wp_get_attachment_image_src( get_post_thumbnail_id( (int)$slide->ID ), 'single-post-thumbnail');\n\t\t  \t\t\t\n\t\t\t\t\t\t$output .= \"<li class='sfs-slide' id='sfs_slide_$slide->ID'/><div class='sfs-slide-background zoomin'  style=\\\"background-image: url('$image[0]');\\\"></div><div class='sfs-slide-text'><H1>\".$slide->post_title.\"</H1><HR><P>\".$slide->post_content.\"</P></div></li>\";\n\n\t\t  }\n\n\t\t  $output .= \"</ul></div></div></div>\";\n\t\t  \n\t\t  return $output;\n\t\t  \n\t\t}\n\n\t\t/* !3. FILTERS */\n\n\t\t// 3.1\n\t\tfunction sfs_slider_column_headers($columns)\n\t\t{\n\t\t\t\n\t\t\t$columns = array(\n\t\t\t\t'cb'=>'<input type=\"checkbox\" />',\n\t\t\t\t'title'=>__( 'Slider Name'),\n\t\t\t\t'sfs_slider_timeout'=>__( 'Slider Timeout'),\n\t\t\t\t'sfs_slider_shortcode'=>__( 'Slider Shortcode'),\n\t\t\t);\t\n\n\t\t\treturn $columns;\n\t\t}\n\n\t\t// 3.2\n\t\tfunction sfs_slider_column_data($column, $post_id) {\n\n\t\t\t$output = '';\n\n\t\t\tswitch($column) {\n\t\t\t\tcase 'title':\n\t\t\t\t\t$output = get_field('sfs_slider_name', $post_id);\n\t\t\t\t\tbreak;\n\t\t\t\tcase 'sfs_slider_shortcode':\n\t\t\t\t\t$shortcode = \"[sfslider id=\\\"$post_id\\\"]\";\t\t\t\n\t\t\t\t\t$output = $shortcode;\n\t\t\t\t\tbreak;\n\t\t\t}\n\n\t\t\techo $output;\n\t\t}\n\n\t\t// 3.3\n\t\t// Registering custom admin titles fix\n\t\tfunction sfs_register_custom_admin_titles() {\n\n\t\t\tadd_filter('the_title', array(&$this, 'sfs_custom_admin_titles'), 99, 2);\n\t\t\t\n\t\t}\n\n\t\t// 3.4\n\t\t// Custom admin titles fix for custom post types that do not have title field\n\t\tfunction sfs_custom_admin_titles( $title, $post_id) {\n\n\t\t\tglobal $post;\n\n\t\t\t$output = $title;\n\n\t\t\tif(isset($post->post_type)):\n\t\t\t\tswitch ($post->post_type) {\n\t\t\t\t\tcase 'sfs_slider':\n\t\t\t\t\t\t$output = get_field('sfs_slider_name', $post_id);\n\t\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\tendif;\n\n\t\t\treturn $output;\n\n\t\t}\n\n\t\t// 3.5\n\t\tfunction sfs_slide_column_headers($columns)\n\t\t{\n\t\t\t$columns = array(\n\t\t\t\t'cb'=>'<input type=\"checkbox\"/>',\n\t\t\t\t'title'=>__( 'Slider Name'),\n\t\t\t);\t\n\n\t\t\treturn $columns;\n\t\t}\n\n\t\t//3.6\n\n\n\t\t/* !4. EXTERNAL SCRIPTS */\n\n\t\t\n\t\tfunction sfs_add_scripts_and_styles() {\n\n\n\t\t    wp_register_style( 'sfs_styles',  plugins_url('/css/styles.css',__FILE__));\n\t\t    wp_register_script( 'sfs_script', plugins_url('/js/script.js', __FILE__ )  , array( 'jquery' ), '', true );\n\t\t    \n\t\t   // $arrayOfValues = sfs_get_settings();\n\n\t\t    $arrayOfValues = array( 'timeout' => 6000);\n\n\t\t\twp_localize_script( 'sfs_script', 'sfs_js_data', $arrayOfValues );\n\n\n\t\t    wp_enqueue_style('sfs_styles');\n\t\t    wp_enqueue_script('sfs_script');\n\t\t}\n\n\t\tfunction sfs_admin_scripts() {\n\t\t\twp_register_style( 'sfs_styles',  plugins_url('/css/styles.css',__FILE__));\n\t\t\twp_enqueue_style('sfs_styles');\n\n\t\t\twp_register_script( 'sfs_admin_script', plugins_url('/js/admin/script.js', __FILE__ )  , array( 'jquery', 'jquery-ui-sortable' ), '', true );\n\n\t\t\twp_enqueue_script('sfs_admin_script');\n\n\t\t}\n\n\n\t\t/* !5. ACTIONS */\n\n\t\t//5.1\n\t\tfunction sfs_get_slides()\n\t\t{\n\t\n\t\t\t$slides = get_post_meta($this->slider_id, 'sfs');\n\n\t\t\tforeach($slides as $slide)\n\t\t\t{\n\n\t\t\t\t\t\t$this->slider_slides[]=get_post($slide);\n\t\t\n\t\t\t}\n\t\t}\n\n\n\n\t\t/* !6. HELPERS */\n\n\t\t/* !8. ADMIN PAGES */\n\n\t\tfunction sfs_dashboard_admin_page() {\n\n\t\t\t$output = '\n\t\t\t<div class=\"wrap\">\n\n\t\t\t\t<h2>SFS Slider Dashboard</h2>\n\t\t\t\t<p> Here you\\'ll find some informations about our slider plugin. </p>\n\n\t\t\t</div>';\n\n\t\t\techo $output;\n\n\t\t}\n\n\t\tfunction sfs_settings_admin_page() {\n\n\t\t\t$output = \"\n\t\t\t<div class='wrap'>\n\n\t\t\t\t<h2>SFS Slider Settings</h2>\n\t\t\t\t<p> General plugin settings page. </p>\n\n\t\t\t</div>\";\n\n\t\t\techo $output;\n\n\t\t}\t\t\n\n\t\tfunction sfs_sliders_admin_page() {\n\n\t\t\t$output = \"\n\t\t\t<div class='wrap'>\n\n\t\t\t\t<h2>SFS Slider Settings</h2>\n\t\t\t\t<p> General plugin settings page. </p>\n\n\t\t\t</div>\";\n\n\t\t\techo $output;\n\n\t\t}\n\n\n\t\tfunction sfs_admin_menus() {\n\n\t\t\t$top_menu_item = 'sfs_dashboard_admin_page';\n\n\t\t\tadd_menu_page( '', \"SFS Slider Admin\", 'manage_options', 'sfs_dashboard_admin_page', array(&$this,'sfs_dashboard_admin_page'), 'dashicons-images-alt2');\n\n\n\t\t\tadd_submenu_page( $top_menu_item, \"Dashboard\", \"Dashboard\", 'manage_options', 'sfs_dashboard_admin_page', array(&$this,'sfs_dashboard_admin_page') );\n\n\t\t\tadd_submenu_page( $top_menu_item, \"Slides\", \"Slides\", 'manage_options', 'edit.php?post_type=sfs_slide' );\n\t\t\t\n\t\t\tadd_submenu_page( $top_menu_item, \"Slider List\", \"Slider List\", 'manage_options', 'edit.php?post_type=sfs_slider' );\n\n\t\t\tadd_submenu_page( $top_menu_item, \"Settings\", \"Settings\", 'manage_options', 'sfs_settings_admin_page', array(&$this,'sfs_settings_admin_page') );\n\n\t\t}\n\n\t}\n\n}\n\nif(class_exists('SFS_Slider'))\n{\n\t$sfs_slider = new SFS_Slider();\n}\n\n\n\n\n\n\n/*function my_acf_load_field( $value, $post_id, $field ) {\n\t\t\n     //$shortcode = get_field('sfs_slider_shortcode', $post_id);\n\t\t\n   //  $shortcode['default_value'] = \"TEST\";\n   //  return $shortcode;\n\treturn \"test\";\n\t\t \n}*/\n\n//add_filter('acf/load_field/name=sfs_slider', 'my_acf_load_field', 10 ,3);\n\n\n\n/* !9. SETTINGS */\n\n\n\n/* !10. FIELDS AND POST TYPES */\n\n\n\n\n",
+			"file": "/C/Users/mani3kxc/AppData/Local/Temp/scp49546/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+			"file_size": 13682,
+			"file_write_time": 131537862000000000,
+			"settings":
+			{
+				"buffer_size": 13153,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "custom_post_types/sfs_custom_post_types.php",
+			"settings":
+			{
+				"buffer_size": 3336,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/mazedesign2/styles.css",
+			"settings":
+			{
+				"buffer_size": 1794,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/mazedesign2/index.html",
+			"settings":
+			{
+				"buffer_size": 314,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -528,9 +606,53 @@
 	"command_palette":
 	{
 		"height": 137.0,
-		"last_filter": "Package Control: install",
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"qui",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"quic",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"quice",
+				"Git: Quick Commit (current file)"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"quick",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"comit",
+				"Git: Commit"
+			],
+			[
+				"git:commit",
+				"Git: Commit"
+			],
 			[
 				"Package Control: install",
 				"Package Control: Install Package"
@@ -552,7 +674,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 444.0
+		"width": 412.0
 	},
 	"console":
 	{
@@ -573,10 +695,31 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs"
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs/custom_post_types"
 	],
 	"file_history":
 	[
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp50905/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/nfe/nfe.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp06324/public_html/mazedesign/index.html",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp08684/public_html/mazedesign/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp39149/public_html/mazedesign/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp38158/public_html/mazedesign/index.html",
+		"/C/xampp/apps/mazedesign/index.html",
+		"/C/xampp/htdocs/applications.html",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp54218/new/wp-content/plugins/folder-gallery/readme.txt",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp02044/new/wp-content/themes/photo_dark/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp50042/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/css/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp24845/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/style.css",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/nfe/css/styles.css",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/nfe/js/script.js",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/nfe/js/admin/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp29191/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/nfe/nfe.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp39944/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/header.php",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs/sfs.sublime-project",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs/sfs.php",
+		"/D/Projekty/Pluginy/FancyElements/fancy-elements/fancy-elements.php",
 		"/C/xampp/apps/wordpress/htdocs/wp-content/themes/total/header.php",
 		"/C/Program Files/Git/mingw64/share/doc/git-doc/git-add.html",
 		"/C/Users/mani3kxc/AppData/Local/Temp/scp13396/fs_FotoWitalinska.zip",
@@ -684,27 +827,7 @@
 		"/C/Users/mani3kxc/AppData/Local/Temp/scp07294/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/style.css",
 		"/C/Users/mani3kxc/AppData/Local/Temp/scp28901/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/inc/template-tags.php",
 		"/C/Users/mani3kxc/AppData/Local/Temp/scp27505/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/functions.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp03002/public_html/images_new/blog/ms2017/w_ja1.jpg",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp21856/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/style.css",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp28577/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/inc/customizer.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp28068/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/inc/back-compat.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp25800/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/header.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp29399/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/template-parts/content-none.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp30908/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/image.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp30083/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/single.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp34417/public_html/itextreme/projects/wordpress/recycling/wp-content/themes/corporateIT/page.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp16978/public_html/images_new/tandem_voucher.jpg",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp49165/public_html/sites/all/themes/stormy/style.css",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp27845/public_html/tandempro/index.html",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp42020/public_html/sites/all/themes/stormy/style.css",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp30952/domains/roletyroltex.pl/public_html/includes/modules/footer.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp50966/domains/roletyroltex.pl/public_html/tmp/template_old.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp21264/domains/roletyroltex.pl/public_html/includes/modules/configure.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp21587/domains/roletyroltex.pl/public_html/includes/modules/database.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp21287/domains/roletyroltex.pl/public_html/includes/modules/footer.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp21145/domains/roletyroltex.pl/public_html/includes/modules/template.php",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp54012/public_html/tandempro/index.html",
-		"/C/Users/mani3kxc/AppData/Local/Temp/scp32576/public_html/tandempro/functions.js"
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp03002/public_html/images_new/blog/ms2017/w_ja1.jpg"
 	],
 	"find":
 	{
@@ -722,6 +845,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"lightb",
+			"itx",
+			"11",
+			"ht-content",
+			"itext",
+			"];",
 			"sfs_admin_scripts",
 			"display: none",
 			"editor",
@@ -843,13 +972,7 @@
 			"feature",
 			"section-content",
 			"o-nas",
-			"feature",
-			"section",
-			"logo-it",
-			"opacity",
-			"logo",
-			"subtit",
-			"subti"
+			"feature"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -879,8 +1002,239 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/xampp/htdocs/mazedesign/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								416,
+								416
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/PostgreSQL/data/pg96/postgresql.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18921,
+								18921
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6892.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/mazedesign/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1749,
+								1749
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/mani3kxc/AppData/Local/Temp/scp37247/public_html/mazedesign/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								467,
+								467
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 169.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/mani3kxc/AppData/Local/Temp/scp49546/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5826,
+								5835
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1950.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "custom_post_types/sfs_custom_post_types.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3336,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1152,
+								1152
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/xampp/htdocs/mazedesign2/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/xampp/htdocs/mazedesign2/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -922,6 +1276,10 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 120.0
 	},
 	"pinned_build_system": "",
 	"project": "sfs.sublime-project",

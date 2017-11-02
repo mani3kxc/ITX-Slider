@@ -106,10 +106,15 @@ if(!class_exists('SFS_Slider')) {
 			//1.9
 			add_action('admin_menu', array(&$this, 'sfs_admin_menus') ); 
 
-			add_action( 'add_meta_boxes', array( $this, 'sfs_slider_add_meta_box' ) );
+			add_action( 'add_meta_boxes', array( &$this, 'sfs_slider_add_meta_box' ) );
 
-			add_action( 'save_post', array( $this, 'sfs_save_post'), 10, 2 );
+			add_action( 'save_post', array( &$this, 'sfs_save_post'), 10, 2 );
  
+
+			add_action('sfs_header_slider', array( &$this, 'sfs_show_header_slider'));
+
+			add_action('admin_init', array(&$this, 'sfs_register_settings'));
+
 
 			add_filter('acf/settings/path', 'sfs_acf_settings_path');
 			add_filter('acf/settings/dir', 'sfs_acf_settings_dir');
@@ -162,7 +167,7 @@ if(!class_exists('SFS_Slider')) {
 
 		$query = new WP_Query($args);
 
-		$output = '<div class="sfs-admin-sliders-active"><H2>Active sliders</H2><div class="sfs-admin-rows-active sfs-admin-sliders-group">
+		$output = '<div class="sfs-admin-sliders-active"><H2>Active slides</H2><div class="sfs-admin-rows-active sfs-admin-sliders-group">
         		';
 
     	if ( $query->have_posts() ) { // you never checked to see if no posts were found
@@ -195,7 +200,7 @@ if(!class_exists('SFS_Slider')) {
 	{
 		$output ='
 			<div class="sfs-admin-sliders-active">
-				<H2>Active sliders</H2>
+				<H2>Active slides</H2>
 				<div class="sfs-admin-rows-active sfs-admin-sliders-group">
 				</div>
 			</div>';
@@ -214,7 +219,7 @@ if(!class_exists('SFS_Slider')) {
 
 	$query = new WP_Query($args);
 
-		$output = '<div class="sfs-admin-sliders"><H2>All sliders</H2><div class="sfs-admin-rows-all sfs-admin-sliders-group">
+		$output = '<div class="sfs-admin-sliders"><H2>All slides</H2><div class="sfs-admin-rows-all sfs-admin-sliders-group">
         		';
     	if ( $query->have_posts() ) { // you never checked to see if no posts were found
     	while($query->have_posts()) { // alt style syntax doesn't work with most IDEs
@@ -236,7 +241,7 @@ if(!class_exists('SFS_Slider')) {
     	}
 
 	} else {
-	    $output .=  '<p>No other sliders found</p>';
+	    $output .=  '<p>No other slides found</p>';
 	} 
 
 	$output .='</div></div>';
@@ -423,9 +428,113 @@ if(!class_exists('SFS_Slider')) {
 			}
 		}
 
+		function sfs_show_header_slider(){
+			$header_slider_ID = $this->sfs_get_option('sfs_header_slider_id');
+
+			if($header_slider_ID)
+				echo do_shortcode( "[sfslider id=\"$header_slider_ID\"]", false );			
+			else 
+				echo "NO SLIDER TODAY";
+		}
 
 
 		/* !6. HELPERS */
+
+		function sfs_get_slides_select($input_name="", $intput_id="", $parent=-1, $value_field="id", $selected_value="") {
+
+			$sliders = get_posts([
+  				'post_type' => 'sfs_slider',
+  				'post_status' => 'publish',
+  				'numberposts' => -1,  				
+  				// 'order'    => 'ASC'
+  				]);
+
+			$output = 
+			'<select name="'. $input_name .'" ';
+
+			if(strlen($intput_id)):
+
+				$output .=' id="' . $intput_id .'" ';
+
+			endif;
+
+			$output .= '><option value=""> - No Slider -</option>';
+
+
+				foreach ($sliders as $slider) 
+				{			
+					$value = $slider->ID;
+
+
+					$selected = '';
+					if ($selected_value == $value) : $selected = ' selected="selected" '; endif;
+
+					$option = '<option value="' . $value . '" ' . $selected . '>';
+					$option .= $slider->sfs_slider_name;
+					$option .= '</option>';
+					
+					$output .= $option;
+				}
+
+			$output .='</select>';
+
+			return $output;
+
+		}
+
+		function sfs_get_current_options() {
+
+			$options = array ();
+
+			try {
+
+				$options = array (
+					'sfs_header_slider_id' => $this->sfs_get_option('sfs_header_slider_id'),
+				);
+			}
+			catch ( Exception $e )
+			{
+
+			}
+
+			return $options;
+
+		}
+
+		function sfs_get_option( $option_name ) {
+
+			$option_value = '';
+
+			try {
+
+				//$defaults = $this->sfs_get_default_options();
+
+				switch ($option_name) {
+					case 'sfs_header_slider_id' :
+
+					$option_value = (get_option('sfs_header_slider_id')) ? get_option('sfs_header_slider_id') : $defaults['sfs_header_slider_id'];
+					
+					break;
+				}
+			}
+
+			catch ( Exception $e) {
+
+			}
+
+			return $option_value;
+
+		}
+
+		function slb_get_default_options() {
+
+			$defaults = array(
+				'sfs_header_slider_id' => 0
+			);
+
+			return $defaults;
+		}
+
 
 		/* !8. ADMIN PAGES */
 
@@ -445,29 +554,40 @@ if(!class_exists('SFS_Slider')) {
 
 		function sfs_settings_admin_page() {
 
-			$output = "
-			<div class='wrap'>
+	
+			$options = $this->sfs_get_current_options();
+
+			echo ('
+				<div class="wrap">
 
 				<h2>SFS Slider Settings</h2>
+
 				<p> General plugin settings page. </p>
 
-			</div>";
+				<form action="options.php" method="post">');
 
-			echo $output;
+				settings_fields( 'sfs_plugin_options' );
+				@do_settings_fields( 'sfs_plugin_options' , 'sfs_plugin_options'  );;
 
-		}		
 
-		function sfs_sliders_admin_page() {
+			echo ('<table class="form-table">
+					<tbody>
+						<tr>
+							<th scope="row"><label for="sfs_header_slider_id">Select header slider</label></th>
+							<td>'.
+							 $this->sfs_get_slides_select('sfs_header_slider_id', 'sfs_header_slider_id', 0, 'id', $options['sfs_header_slider_id']) .
+							 '<p class="description" id="sfs_header_slider_id-description">Please select slider that apears on the page header</p>
+							 </td>
+						</tr>
+					</tbody>
+				</table>
+				');
+				
+				@submit_button();
+				
 
-			$output = "
-			<div class='wrap'>
+				echo ('</form></div>');
 
-				<h2>SFS Slider Settings</h2>
-				<p> General plugin settings page. </p>
-
-			</div>";
-
-			echo $output;
 
 		}
 
@@ -488,6 +608,15 @@ if(!class_exists('SFS_Slider')) {
 			add_submenu_page( $top_menu_item, "Settings", "Settings", 'manage_options', 'sfs_settings_admin_page', array(&$this,'sfs_settings_admin_page') );
 
 		}
+
+
+		/* !9. SETTINGS */
+
+		function sfs_register_settings() {
+
+			register_setting('sfs_plugin_options', 'sfs_header_slider_id');
+
+			}
 
 	}
 
@@ -516,8 +645,6 @@ if(class_exists('SFS_Slider'))
 //add_filter('acf/load_field/name=sfs_slider', 'my_acf_load_field', 10 ,3);
 
 
-
-/* !9. SETTINGS */
 
 
 
