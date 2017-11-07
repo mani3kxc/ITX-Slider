@@ -156,8 +156,12 @@ if(!class_exists('itxsl_Slider')) {
 		if(get_post_status()!='auto-draft')
 		{
 
-		$data = get_post_custom($post->ID);
-		$data = $data['itxsl'];
+		if($data = get_post_custom($post->ID))
+		{
+			$data = $data['itxsl'];
+		}
+		else
+			$data = 0;
 
 		if(!$data)
 			$data[] = 0;
