@@ -20,7 +20,7 @@ function cptui_register_my_cpts() {
 		"labels" => $labels,
 		"description" => "ITX Slider Slide",
 		"public" => false,
-		"supports" => array( "title","excerpt", "editor", "thumbnail" ),
+		"supports" => array( "title","editor", "thumbnail" ),
 		"publicly_queryable" => false,
 		"show_ui" => true,
 		"show_in_rest" => false,
@@ -72,6 +72,183 @@ function cptui_register_my_cpts() {
 
 if(function_exists("register_field_group"))
 {
+
+	if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_slide',
+		'title' => 'Slide',
+		'fields' => array (
+			array (
+				'key' => 'field_5a0233413ea11',
+				'label' => 'Show Title',
+				'name' => 'itxsl_slide_title_show',
+				'type' => 'checkbox',
+				'choices' => array (
+					1 => 'Check if you want to show customized text on this slide.',
+				),
+				'default_value' => 1,
+				'layout' => 'vertical',
+			),
+			array (
+				'key' => 'field_5a023168d5dbd',
+				'label' => 'Title Color',
+				'name' => 'itxsl_slide_title_color',
+				'type' => 'color_picker',
+				'instructions' => 'Choose color for Slide title',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_5a0233413ea11',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+			),
+			array (
+				'key' => 'field_5a0235531dcb1',
+				'label' => 'Title Font Size',
+				'name' => 'itxsl_slide_title_font_size',
+				'type' => 'text',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_5a0233413ea11',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '72px',
+				'placeholder' => '72px',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => 5,
+			),
+			array (
+				'key' => 'field_5a02345159a18',
+				'label' => 'Show Description',
+				'name' => 'itxsl_slide_description_show',
+				'type' => 'checkbox',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_5a0233413ea11',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'choices' => array (
+					1 => 'Check if you want to show slide description text under the title.',
+				),
+				'default_value' => 1,
+				'layout' => 'vertical',
+			),
+			array (
+				'key' => 'field_5a02350dbbfea',
+				'label' => 'Description Color',
+				'name' => 'itxsl_slide_description_color',
+				'type' => 'color_picker',
+				'instructions' => 'Choose color for Slide description',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_5a02345159a18',
+							'operator' => '==',
+							'value' => '1',
+						),
+						array (
+							'field' => 'field_5a0233413ea11',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+			),
+			array (
+				'key' => 'field_5a0235bca9f0a',
+				'label' => 'Description Font Size',
+				'name' => 'itxsl_slide_description_font_size',
+				'type' => 'text',
+				'conditional_logic' => array (
+					'status' => 1,
+					'rules' => array (
+						array (
+							'field' => 'field_5a02345159a18',
+							'operator' => '==',
+							'value' => '1',
+						),
+						array (
+							'field' => 'field_5a0233413ea11',
+							'operator' => '==',
+							'value' => '1',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '20px',
+				'placeholder' => '20px',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => 5,
+			),
+			array (
+				'key' => 'field_5a0231e60bf1f',
+				'label' => 'Text Position',
+				'name' => 'itxsl_slide_text_position',
+				'type' => 'select',
+				'choices' => array (
+					'top-center' => 'top-center',
+					'top-left' => 'top-left',
+					'top-right' => 'top-right',
+					'middle-center' => 'middle-center',
+					'middle-left' => 'middle-left',
+					'middle-right' => 'middle-right',
+					'bottom-center' => 'bottom-center',
+					'bottom-left' => 'bottom-left',
+					'bottom-right' => 'bottom-right',
+				),
+				'default_value' => 'middle-center',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'itxsl_slide',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+	
 	register_field_group(array (
 		'id' => 'acf_itxsl-slider-details',
 		'title' => 'ITX Slider Details',

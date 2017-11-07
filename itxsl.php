@@ -119,7 +119,7 @@ if(!class_exists('itxsl_Slider')) {
 			add_filter('acf/settings/path', 'itxsl_acf_settings_path');
 			add_filter('acf/settings/dir', 'itxsl_acf_settings_dir');
 			add_filter('acf/settings/show_admin', 'itxsl_acf_show_admin');
-			if(!defined('ACF_LITE')) define('ACF_LITE', true);
+			//if(!defined('ACF_LITE')) define('ACF_LITE', true);
 		}
 
 
@@ -308,9 +308,21 @@ if(!class_exists('itxsl_Slider')) {
 
 		  foreach($this->slider_slides as $slide)
 		  {
+
 		  			$image = wp_get_attachment_image_src( get_post_thumbnail_id( (int)$slide->ID ), 'single-post-thumbnail');
 		  			
-						$output .= "<li class='itxsl-slide' id='itxsl_slide_$slide->ID'/><div class='itxsl-slide-background zoomin'  style=\"background: url('$image[0]');\"></div><div class='itxsl-slide-text'><H1>".$slide->post_title."</H1><HR><P>".$slide->post_content."</P></div></li>";
+		  			//get_field('itxsl_slide_text_position',$slide->ID);
+
+						$output .= "<li class='itxsl-slide' id='itxsl_slide_$slide->ID'/><div class='itxsl-slide-background nozoomin' style=\"background-image: url('$image[0]');\"></div>
+						<div class='itxsl-slide-text' style=\"
+						
+						\"><H1 style=\"
+						color: ".get_field('itxsl_slide_title_color',$slide->ID)." ;
+						font-size: ".get_field('itxsl_slide_title_font_size',$slide->ID)." ;
+						\">".$slide->post_title."</H1><HR><P style=\"
+						color: ".get_field('itxsl_slide_description_color',$slide->ID)." ;
+						font-size: ".get_field('itxsl_slide_description_font_size',$slide->ID)." ;
+						\">".$slide->post_content."</P></div></li>";
 
 		  }
 
@@ -635,19 +647,20 @@ if(!class_exists('itxsl_Slider')) {
 
 		function itxsl_admin_menus() {
 
-			$top_menu_item = 'itxsl_dashboard_admin_page';
+			$top_menu_item = 'itxsl_settings_admin_page';
 
-			add_menu_page( '', "ITX Slider Admin", 'manage_options', 'itxsl_dashboard_admin_page', array(&$this,'itxsl_dashboard_admin_page'), 'dashicons-images-alt2');
-
-
-			add_submenu_page( $top_menu_item, "Dashboard", "Dashboard", 'manage_options', 'itxsl_dashboard_admin_page', array(&$this,'itxsl_dashboard_admin_page') );
-
-			add_submenu_page( $top_menu_item, "Slides", "Slides", 'manage_options', 'edit.php?post_type=itxsl_slide' );
-			
-			add_submenu_page( $top_menu_item, "Slider List", "Slider List", 'manage_options', 'edit.php?post_type=itxsl_slider' );
+			add_menu_page( '', "ITX Slider", 'manage_options', 'itxsl_settings_admin_page', array(&$this,'itxsl_settings_admin_page'), 'dashicons-images-alt2');
 
 			add_submenu_page( $top_menu_item, "Settings", "Settings", 'manage_options', 'itxsl_settings_admin_page', array(&$this,'itxsl_settings_admin_page') );
 
+			//add_submenu_page( $top_menu_item, "Dashboard", "Dashboard", 'manage_options', 'itxsl_dashboard_admin_page', array(&$this,'itxsl_dashboard_admin_page') );
+
+			add_submenu_page( $top_menu_item, "Slider List", "Slider List", 'manage_options', 'edit.php?post_type=itxsl_slider' );
+
+			add_submenu_page( $top_menu_item, "Slides", "Slides", 'manage_options', 'edit.php?post_type=itxsl_slide' );
+			
+			
+			
 		}
 
 

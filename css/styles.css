@@ -2,8 +2,8 @@
 
 
 .itxsl-container {
-  height: 360px;
   width: 100%;
+  height: 100%;
   position: relative;
   display: block;
   background: #ffffff;
@@ -22,7 +22,10 @@
   height: 100%;
   width: 100%;
   background: url('http://paralotniarz.com.pl/sites/all/themes/stormy/images/grid-overlay.png');
+
   z-index:10;
+
+  display: none;
 }
 
 .itxsl-slide {
@@ -40,14 +43,19 @@
   top:0px;
   left:0px;
   opacity: 0;
-  background-size: cover!important;
-  background-repeat: no-repeat!important;
+  background-size: cover;
+  background-repeat: no-repeat;
 
 }
 
-.zoomin {
+.zoominx {
   transition-duration: 6s;
   transform: scale(1.1);
+}
+
+.nozoomin {
+  transition-duration: 0s;
+  transform: scale(1);
 }
 
 .itxsl-slide .itxsl-slide-text {
@@ -113,7 +121,7 @@
   transition-duration: 2s, 2s;
 
   opacity:0;
-  transform: scale(1.1);
+  //transform: scale(1.1);
 
   z-index:9;
 }
