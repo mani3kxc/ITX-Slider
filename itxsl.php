@@ -158,13 +158,17 @@ if(!class_exists('itxsl_Slider')) {
 
 		if($data = get_post_custom($post->ID))
 		{
-			$data = $data['itxsl'];
+			
+			if(array_key_exists("itxsl", $data))
+				$data = $data['itxsl'];
+			else
+				$data = 0;
 		}
 		else
 			$data = 0;
 
 		if(!$data)
-			$data[] = 0;
+			$data = 0;
 
   		$args = array(
   				'post__in'  => $data,
@@ -256,17 +260,19 @@ if(!class_exists('itxsl_Slider')) {
 
 	}
 
-		function itxsl_save_post( $post_id, $post ){
+	function itxsl_save_post( $post_id, $post ){
 
-		if(sizeof($_POST['itxsl'])==0)
-			delete_post_meta($post_id, 'itxsl');
-		else if (!empty($_POST['itxsl']) && is_array($_POST['itxsl'])) {
-    	    delete_post_meta($post_id, 'itxsl');
-        	foreach ($_POST['itxsl'] as $itxsl => $val) { 	
-            	add_post_meta($post_id, 'itxsl', $itxsl);
-        }
+		if(array_key_exists('itxsl', $_POST))
+		{
+			if(sizeof($_POST['itxsl'])==0)
+				delete_post_meta($post_id, 'itxsl');
+			else if (!empty($_POST['itxsl']) && is_array($_POST['itxsl'])) {
+	    	    delete_post_meta($post_id, 'itxsl');
+        		foreach ($_POST['itxsl'] as $itxsl => $val) { 	
+	            	add_post_meta($post_id, 'itxsl', $itxsl);
+    	    }
+    	}
     }
-
 
 }
 
@@ -458,16 +464,15 @@ if(!class_exists('itxsl_Slider')) {
 
 			$slider_ID = 0;
 
-			if($page_slider_ID[0]!="null" && !empty($page_slider_ID))
-				$slider_ID = $page_slider_ID[0];
+			if(!empty($page_slider_ID))
+				{
+					if($page_slider_ID[0]!="null")
+						$slider_ID = $page_slider_ID[0];
+				}
 			else
 				$slider_ID = $this->itxsl_get_option('itxsl_header_slider_id');
 			
 	
-
-
-
-
 			if($slider_ID)
 				echo do_shortcode( "[itxslider id=\"$slider_ID\"]", false );			
 
@@ -543,7 +548,7 @@ if(!class_exists('itxsl_Slider')) {
 
 			try {
 
-				//$defaults = $this->itxsl_get_default_options();
+				$defaults = $this->itxsl_get_default_options();
 
 				switch ($option_name) {
 					case 'itxsl_header_slider_id' :
@@ -562,7 +567,7 @@ if(!class_exists('itxsl_Slider')) {
 
 		}
 
-		function slb_get_default_options() {
+		function itxsl_get_default_options() {
 
 			$defaults = array(
 				'itxsl_header_slider_id' => 0
