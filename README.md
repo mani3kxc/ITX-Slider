@@ -1,1 +1,0 @@
-# sfs_slider
