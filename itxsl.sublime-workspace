@@ -1,0 +1,1110 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"header",
+				"header_slider_ID"
+			],
+			[
+				"sfs_header_slider",
+				"sfs_header_slider_id"
+			],
+			[
+				"optio",
+				"option_value"
+			],
+			[
+				"settin",
+				"settings_fields\tWP Function"
+			],
+			[
+				"get_post",
+				"get_posts\tWP Function"
+			],
+			[
+				"b",
+				"border-box"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"bacgr",
+				"background-position"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"tran",
+				"translate()"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"row",
+				"row_datas"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"sfs-admi",
+				"sfs-admin-rows"
+			],
+			[
+				"sfs-admin-title",
+				"sfs-admin-row-title"
+			],
+			[
+				"SFS_Slider",
+				"SFS_Slider_Init"
+			],
+			[
+				"slider",
+				"slider_slides"
+			],
+			[
+				"register_sort",
+				"sfs_register_shortcodes"
+			],
+			[
+				"array",
+				"arrayOfValues"
+			],
+			[
+				"post",
+				"post_id"
+			],
+			[
+				"sfs_slider",
+				"sfs_slider"
+			],
+			[
+				"add_menu",
+				"add_menu_page\tWP Function"
+			],
+			[
+				"translate",
+				"translate()"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"the_t",
+				"the_title\tWP Function"
+			],
+			[
+				"wp_reset",
+				"wp_reset_query\tWP Function"
+			],
+			[
+				"slides",
+				"slides_id"
+			],
+			[
+				"get_the",
+				"get_the_ID\tWP Function"
+			],
+			[
+				"have",
+				"have_posts\tWP Function"
+			],
+			[
+				"sfs_slide",
+				"sfs_slide"
+			],
+			[
+				"custom",
+				"custom_fields"
+			],
+			[
+				"sfs_slider_",
+				"sfs_slider_name"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"nowy",
+				"nowy_link"
+			],
+			[
+				"str",
+				"strstr"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"s",
+				"space-around"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"ff",
+				"ffbe00"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"backgrou",
+				"background"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"f",
+				"flex-end"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"tr",
+				"transition-duration"
+			],
+			[
+				"tra",
+				"translateY()"
+			],
+			[
+				"transi",
+				"transition-duration"
+			],
+			[
+				"trna",
+				"translateY()"
+			],
+			[
+				"tras",
+				"transform"
+			],
+			[
+				"c",
+				"cover"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"fle",
+				"flex-start"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"fe",
+				"flex-start"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"age",
+				"agehandle"
+			],
+			[
+				"t",
+				"transition-property"
+			],
+			[
+				"vide",
+				"videoplayback"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"ds",
+				"display"
+			],
+			[
+				"space",
+				"space-around"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"align-",
+				"align-items"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"Ralewa",
+				"RalewayM"
+			],
+			[
+				"sp",
+				"space-between"
+			],
+			[
+				"flex-",
+				"flex-direction"
+			],
+			[
+				"title",
+				"wp_title"
+			],
+			[
+				"transition",
+				"transition-duration"
+			],
+			[
+				"anima",
+				"animation"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"content",
+				"file_get_contents"
+			],
+			[
+				"transitio",
+				"transition-duration"
+			],
+			[
+				"trasit",
+				"transition-delay"
+			],
+			[
+				"transit",
+				"transition-duration"
+			],
+			[
+				"transition-d",
+				"transition-duration"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"backgroun",
+				"background-repeat"
+			],
+			[
+				"transo",
+				"transform"
+			],
+			[
+				"tranfo",
+				"transform"
+			],
+			[
+				"transl",
+				"translateX()"
+			],
+			[
+				"backgo",
+				"background"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"wp_enqueue_scrip",
+				"wp_enqueue_script"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"animat",
+				"animation-delay"
+			],
+			[
+				"trns",
+				"transform"
+			],
+			[
+				"sans",
+				"sans-serif"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"san",
+				"sans-serif"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"anim",
+				"animation-delay"
+			],
+			[
+				"trn",
+				"transform"
+			],
+			[
+				"bacc",
+				"background-attachment"
+			],
+			[
+				"wra",
+				"word-wrap"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"competitor",
+				"competitors"
+			],
+			[
+				"NaN",
+				"isNaN"
+			],
+			[
+				"console",
+				"console.log"
+			],
+			[
+				"cons",
+				"console.log"
+			],
+			[
+				"distan",
+				"distance"
+			],
+			[
+				"start_",
+				"start_marker"
+			],
+			[
+				"distance",
+				"distance_circle"
+			],
+			[
+				"scr",
+				"scrollToVerticalOffset\tmethod"
+			],
+			[
+				"View",
+				"ViewChild\talias"
+			],
+			[
+				"act",
+				"actionBarHidden\tproperty"
+			],
+			[
+				"P",
+				"PipeTransform\talias"
+			],
+			[
+				"me",
+				"messagesarray\tproperty"
+			],
+			[
+				"transla",
+				"translate()"
+			],
+			[
+				"JSON",
+				"JSON\tinterface"
+			],
+			[
+				"mess",
+				"messages\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sfs.php",
+			"settings":
+			{
+				"buffer_size": 15956,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "custom_post_types/sfs_custom_post_types.php",
+			"settings":
+			{
+				"buffer_size": 3366,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 302.0,
+		"last_filter": "push",
+		"selected_items":
+		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git:",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"quic",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"qui",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"quice",
+				"Git: Quick Commit (current file)"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"quick",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"comit",
+				"Git: Commit"
+			],
+			[
+				"git:commit",
+				"Git: Commit"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: INSTA",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 508.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs/custom_post_types"
+	],
+	"file_history":
+	[
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp30521/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp31734/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/css/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp21831/sortsystem.pl/wp-content/themes/photo_dark/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp26101/sortsystem.pl/wp-content/themes/photo_dark/404.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp20497/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp05766/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/functions.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp20087/public_html/mazedesign/styles.css",
+		"/Z/końcowy/full.html",
+		"/C/xampp/htdocs/fai/funkcje.php",
+		"/C/xampp/htdocs/fai/db.php",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs/sfs.php",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/themes/total/header.php",
+		"/D/Projekty/Pluginy/iofp/js/script.js",
+		"/C/xampp/htdocs/mazedesign2/index.html",
+		"/C/xampp/htdocs/mazedesign2/styles.css",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs/custom_post_types/sfs_custom_post_types.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp49546/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp37247/public_html/mazedesign/styles.css",
+		"/C/xampp/htdocs/mazedesign/index.html",
+		"/C/PostgreSQL/data/pg96/postgresql.conf",
+		"/C/xampp/htdocs/mazedesign/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp50905/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/nfe/nfe.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp06324/public_html/mazedesign/index.html",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp08684/public_html/mazedesign/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp39149/public_html/mazedesign/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp38158/public_html/mazedesign/index.html",
+		"/C/xampp/apps/mazedesign/index.html",
+		"/C/xampp/htdocs/applications.html",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp54218/new/wp-content/plugins/folder-gallery/readme.txt",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp02044/new/wp-content/themes/photo_dark/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp50042/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/css/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp24845/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/style.css",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/nfe/css/styles.css",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/nfe/js/script.js",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/nfe/js/admin/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp29191/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/nfe/nfe.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp39944/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/header.php",
+		"/C/xampp/apps/wordpress/htdocs/wp-content/plugins/sfs/sfs.sublime-project",
+		"/D/Projekty/Pluginy/FancyElements/fancy-elements/fancy-elements.php",
+		"/C/Program Files/Git/mingw64/share/doc/git-doc/git-add.html",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp13396/fs_FotoWitalinska.zip",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp14029/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/lib/advanced-custom-fields/readme.txt",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp34039/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/custom_post_types/sfs_custom_post_types.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp43379/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/css/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp45431/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/js/admin/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp37429/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp39344/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/custom_post_types/sfs_custom_post_types.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp23878/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp00473/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/freeslider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp28653/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/js/admin/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp37229/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/templates/admin/single-slides/image.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp48827/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/templates/front/slider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp45201/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/templates/front/style/style.css.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp45654/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/includes/class-hugeit-slider-slide.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp45206/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/includes/class-hugeit-slider-shortcode.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp39219/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/templates/admin/single-slider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp41781/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/templates/admin/general-options.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp41010/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/templates/admin/sliders.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp43674/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/slider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp49609/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/includes/admin/class-hugeit-slider-sliders.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp52511/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/slider-image/includes/admin/class-hugeit-slider-html-loader.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp32450/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/custom_post_types/sfs_customposttypes.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp31440/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/custom_post_types/sfs_customposttypes.php%5C",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp21195/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/js/private/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp50681/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/js/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp47623/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp23940/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp22380/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp49107/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp04234/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/css/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp24824/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/templates/home-template.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp22520/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp19720/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/js/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/Temp1_Course Files - Activation, Deactivation, & Uninstall.zip/Activation, Deactivation, & Uninstall/1 - Checking WP Version/snappy-list-builder/js/private/snappy-list-builder.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp26628/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp05312/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp46500/public_html/skrzyczne/config.inc.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp05927/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp12790/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/js/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp37882/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/sfs/sfs.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp29060/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp06866/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/css/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp07833/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/js/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp56838/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/freeslider.php",
+		"/D/Projekty/Pluginy/freeslider/js/script.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp27626/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/freeslider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp06995/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/css/bg-nepal.jpg",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp40980/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/css/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp49149/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp34478/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/js/script.js",
+		"/D/Projekty/Pluginy/freeslider/freeslider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp59803/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/freeslider.php",
+		"/D/Projekty/Pluginy/freeslider/css/styles.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp14425/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/freeslider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp11440/public_html/itextreme/projects/wordpress/lukasz2/wp-config.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp57085/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/freeslider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp35773/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/freeslider/freeslider.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp14073/public_html/itextreme/projects/wordpress/lukasz2/wp-content/plugins/list-builder/list-builder.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp44175/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp45869/public_html/itextreme/projects/wordpress/lukasz2/wp-content/themes/total/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp43959/public_html/itextreme/wp-content/themes/itx_opt/footer.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp20665/public_html/itextreme/wp-content/themes/itx_opt/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp25447/public_html/itextreme/wp-content/themes/itx_opt/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp57725/new/wp-content/themes/photo_dark/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp31764/public_html/itextreme/wp-content/themes/itx_opt/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp12007/new/wp-content/themes/photo_dark/footer.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp53004/new/wp-content/themes/photo_dark/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp25017/public_html/translate/index.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp53172/new/wp-content/themes/photo_dark/footer.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp16294/public_html/itextreme/wp-content/themes/itx_opt/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp40683/public_html/cron/index.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp04535/public_html/cron/data.txt",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp54612/public_html/itextreme/projects/wordpress/lukasz/wp-content/themes/total/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp14865/public_html/itextreme/projects/wordpress/lukasz/wp-content/themes/total/footer.php",
+		"/C/Users/mani3kxc/Desktop/ekologiczne/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp46313/public_html/itextreme/projects/wordpress/lukasz/wp-content/themes/total/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp42154/public_html/itextreme/projects/wordpress/lukasz/wp-content/themes/total/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp05354/public_html/itextreme/projects/wordpress/lukasz/wp-content/themes/total/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp00787/public_html/itextreme/projects/wordpress/lukasz/wp-content/themes/twentysixteen/style.css",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp49528/public_html/cron/index.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp22605/public_html/cron/index.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp30245/public_html/wito/index.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp10603/public_html/cron/index.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp31724/public_html/itextreme/wp-content/themes/photo_dark/js/functions.js",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp14805/public_html/itextreme/wp-content/themes/photo_dark/header.php",
+		"/C/Users/mani3kxc/AppData/Local/Temp/scp14239/public_html/itextreme/wp-content/themes/photo_dark/front-page.php",
+		"/D/Backup/fai/funkcje.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sfs",
+			"SFS_Slider",
+			"sfs",
+			"border",
+			"wrap",
+			"itex",
+			"ITX",
+			"mariusz",
+			"itx-slider-wrap",
+			"mysql_query",
+			"N SLIDER",
+			"sfs_show_header_slider",
+			"header",
+			"sfs_get_current_options",
+			"sfs_get_slides_select",
+			"sfs_register_settings",
+			"do_settings_fields",
+			"}\n",
+			"select",
+			"sfs_show_header_slider",
+			"lightb",
+			"itx",
+			"11",
+			"ht-content",
+			"itext",
+			"];",
+			"sfs_admin_scripts",
+			"display: none",
+			"editor",
+			"before",
+			"editor",
+			"sfs_slide_post_object_rows",
+			"sfs_get_slides",
+			"global $post",
+			"slider_id",
+			"sfs_get_slides",
+			"sfs_slider_slides",
+			"die",
+			"sfs_slide_post_object_rows",
+			"sfs-ad",
+			"fxpb",
+			"fxpb-rows",
+			".fxpb-rows",
+			"query",
+			"labels",
+			"columns",
+			"manage_mycpt_posts_columns",
+			"$js",
+			"sfs_get_slides",
+			"sfs_dashboard_admin_page",
+			"TEST",
+			"admin_menu",
+			"Add image",
+			"settings",
+			"dashboard",
+			"sfs_dashboard_admin_page",
+			"admin",
+			"CUSTOM POST TYPES",
+			"add_act",
+			"exter",
+			"itx-slide",
+			"itx",
+			"itextre",
+			"sfs_get_settings",
+			"js_data",
+			"sfs_add_scripts_and_styles",
+			"sfs_get_slides",
+			"sfs_slide_post_object_rows",
+			"shortcode",
+			"exter",
+			"sfs_admin_menus",
+			"slide",
+			"sfs_styles",
+			"title",
+			";\n",
+			"title",
+			"sfs_add_scripts_and_styles",
+			"add_scripts_and_styles",
+			"slb_subscriber_column_headers",
+			"sfslider",
+			"header",
+			"media",
+			"subtitle",
+			"nav-wra",
+			"nav",
+			"reali",
+			".col-sm-6",
+			"col",
+			"footer",
+			"clearfix",
+			"clearfi",
+			"footer",
+			"wizyt",
+			"wordss",
+			"\t\t\t$headerFields = array(\n    \t\t\t\"MIME-Version: 1.0\",\n    \t\t\t\"Content-Type: text/html;charset=utf-8\"\n);",
+			"nowy_glider",
+			"wrap",
+			"top-header",
+			"navigation",
+			"navigat",
+			"button",
+			"footer",
+			"media",
+			"contact-left ",
+			"contact",
+			"label",
+			"formularz",
+			"feature A",
+			"contact",
+			"subtit",
+			"logo-it",
+			"contact",
+			";\n",
+			"formula",
+			"contact",
+			"footer",
+			"contact-l",
+			"formul",
+			"contact",
+			"section-contact",
+			"section-conta",
+			"formula",
+			"formularz",
+			"formul",
+			"form",
+			"formularz",
+			".front",
+			"section-contact"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"itxsl",
+			"ITXsl",
+			"itxsl",
+			"mysqli_query ",
+			"-",
+			"*",
+			"-",
+			"*",
+			"same",
+			"pokoje_same",
+			"pokoje_cennik",
+			"pokoje",
+			"kreska",
+			"kolko_visible",
+			"polyline",
+			"box"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sfs.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1622,
+								1622
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "custom_post_types/sfs_custom_post_types.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								281,
+								284
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "sfs.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

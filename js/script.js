@@ -3,19 +3,19 @@ var $ = jQuery.noConflict();
 
 $('document').ready(function(){
 
-console.log(sfs_js_data.timeout);
-sliderInit(sfs_js_data.timeout);
+console.log(itxsl_js_data.timeout);
+sliderInit(itxsl_js_data.timeout);
 
 function sliderInit(interval) {
 
-    maxsliders=$('.sfs-container').find('.sfs-slide').length;
+    maxsliders=$('.itxsl-container').find('.itxsl-slide').length;
 
     slides_map = new Array();
     i = 0;
 
-    $('.sfs-container').find('.sfs-slide').each(function() {
+    $('.itxsl-container').find('.itxsl-slide').each(function() {
         
-        slides_map[i] = this.getAttribute( "id" ).slice(10);
+        slides_map[i] = this.getAttribute( "id" ).slice(12);
         i++;
 
     });
@@ -47,10 +47,10 @@ function SliderNext(current,maxsliders)
         console.log("old " + old + " -> " + slides_map[old]);
     }
 
-    $('.sfs-slide').removeClass('sfs-slide-active');
-    $('.sfs-slide').removeClass('sfs-slide-old');
-    $('#sfs_slide_'+slides_map[old]).addClass('sfs-slide-old');
-    $('#sfs_slide_'+slides_map[current]).addClass('sfs-slide-active');
+    $('.itxsl-slide').removeClass('itxsl-slide-active');
+    $('.itxsl-slide').removeClass('itxsl-slide-old');
+    $('#itxsl_slide_'+slides_map[old]).addClass('itxsl-slide-old');
+    $('#itxsl_slide_'+slides_map[current]).addClass('itxsl-slide-active');
 
     return current;
 

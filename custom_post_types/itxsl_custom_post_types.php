@@ -11,14 +11,14 @@ function cptui_register_my_cpts() {
 	 */
 
 	$labels = array(
-		"name" => __( "Slides", "sfs" ),
-		"singular_name" => __( "Slide", "sfs" ),
+		"name" => __( "Slides", "itxsl" ),
+		"singular_name" => __( "Slide", "itxsl" ),
 	);
 
 	$args = array(
-		"label" => __( "Slides", "sfs" ),
+		"label" => __( "Slides", "itxsl" ),
 		"labels" => $labels,
-		"description" => "Simple FreeSlider Slide",
+		"description" => "ITX Slider Slide",
 		"public" => false,
 		"supports" => array( "title","excerpt", "editor", "thumbnail" ),
 		"publicly_queryable" => false,
@@ -31,24 +31,24 @@ function cptui_register_my_cpts() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => array( "slug" => "sfs_slide", "with_front" => false ),
+		"rewrite" => array( "slug" => "itxsl_slide", "with_front" => false ),
 		"query_var" => true,
 		
 	);
 
-	register_post_type( "sfs_slide", $args );
+	register_post_type( "itxsl_slide", $args );
 
 	/**
 	 * Post Type: Sliders.
 	 */
 
 	$labels = array(
-		"name" => __( "Sliders", "sfs" ),
-		"singular_name" => __( "Slider", "sfs" ),
+		"name" => __( "Sliders", "itxsl" ),
+		"singular_name" => __( "Slider", "itxsl" ),
 	);
 
 	$args = array(
-		"label" => __( "Sliders", "sfs" ),
+		"label" => __( "Sliders", "itxsl" ),
 		"labels" => $labels,
 		"description" => "Slider",
 		"public" => false,
@@ -62,24 +62,24 @@ function cptui_register_my_cpts() {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => array( "slug" => "sfs_slider", "with_front" => false ),
+		"rewrite" => array( "slug" => "itxsl_slider", "with_front" => false ),
 		"query_var" => true,
 		"supports" => false,
 	);
 
-	register_post_type( "sfs_slider", $args );
+	register_post_type( "itxsl_slider", $args );
 }
 
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
-		'id' => 'acf_freeslider-slider-details',
-		'title' => 'FreeSlider Slider Details',
+		'id' => 'acf_itxsl-slider-details',
+		'title' => 'ITX Slider Details',
 		'fields' => array (
 			array (
 				'key' => 'field_59de2ed6a176a',
 				'label' => 'Slider Name',
-				'name' => 'sfs_slider_name',
+				'name' => 'itxsl_slider_name',
 				'type' => 'text',
 				'instructions' => 'Friendly Name of a slider',
 				'required' => 1,
@@ -93,7 +93,7 @@ if(function_exists("register_field_group"))
 			array (
 				'key' => 'field_59e50997ba330',
 				'label' => 'Slider Timeout',
-				'name' => 'sfs_slider_timeout',
+				'name' => 'itxsl_slider_timeout',
 				'type' => 'number',
 				'required' => 1,
 				'default_value' => 10000,
@@ -107,7 +107,7 @@ if(function_exists("register_field_group"))
 			array (
 				'key' => 'field_59e85f2a19bdb',
 				'label' => 'Slider Width',
-				'name' => 'sfs_slider_width',
+				'name' => 'itxsl_slider_width',
 				'type' => 'text',
 				'default_value' => '100%',
 				'placeholder' => '',
@@ -119,7 +119,7 @@ if(function_exists("register_field_group"))
 			array (
 				'key' => 'field_59e85f5919bdc',
 				'label' => 'Slider Height',
-				'name' => 'sfs_slider_height',
+				'name' => 'itxsl_slider_height',
 				'type' => 'text',
 				'default_value' => '300px',
 				'placeholder' => '',
@@ -134,7 +134,7 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'post_type',
 					'operator' => '==',
-					'value' => 'sfs_slider',
+					'value' => 'itxsl_slider',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
@@ -142,6 +142,46 @@ if(function_exists("register_field_group"))
 		),
 		'options' => array (
 			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+
+	register_field_group(array (
+		'id' => 'acf_itxsl-page-slider',
+		'title' => 'ITX Page Slider',
+		'fields' => array (
+			array (
+				'key' => 'field_5a00ceec9067a',
+				'label' => 'ITX Slider',
+				'name' => 'itxsl_page_slider',
+				'type' => 'post_object',
+				'instructions' => 'Select slider for this page',
+				'post_type' => array (
+					0 => 'itxsl_slider',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'allow_null' => 1,
+				'multiple' => 0,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'page',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'side',
 			'layout' => 'no_box',
 			'hide_on_screen' => array (
 			),
