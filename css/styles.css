@@ -61,16 +61,15 @@
 .itxsl-slide .itxsl-slide-text {
   
   position: absolute;
-  width: 100%;
-  top:50%;
-  transform: translate(0,-50%);
+ // width: 100%;
+  
   opacity: 0;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   
 }
 
 .itxsl-slide .itxsl-slide-text H1 {
-  
+  display: inline-block;
   text-align: center;
   color: white;
 
@@ -118,7 +117,7 @@
 
 .itxsl-slide-old .itxsl-slide-background {
   transition-property: opacity, transform;
-  transition-duration: 2s, 2s;
+  transition-duration: 0.5s, 2s;
 
   opacity:0;
   //transform: scale(1.1);
@@ -131,8 +130,64 @@
   z-index:12;
 }
 
+UL.itxsl-dots-container {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: auto;
+  height: 25px;
+  margin: 5px auto;
+  z-index: 20;
+}
 
+LI.itxsl-dot {
+  display: inline-block;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  content:"";
+  cursor: pointer;
+}
 
+LI.itxsl-dot-active {
+  display: inline-block;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  content:"";
+  cursor: default;
+}
+
+#prev-button {
+  display: block;
+  width:50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.5);
+  z-index: 20;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+#next-button {
+  display: block;
+  width:50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  background: rgba(255,255,255,0.5);
+  z-index: 20;
+  text-indent: -9999px;
+  cursor: pointer;
+}
 
 .upload_image {
   width: 200px;

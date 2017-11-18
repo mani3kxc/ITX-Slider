@@ -62,6 +62,8 @@ include_once( plugin_dir_path( __FILE__ ) . 'lib/advanced-custom-fields/acf.php'
 include_once( plugin_dir_path( __FILE__ ) . '/custom_post_types/itxsl_custom_post_types.php');
 
 
+
+
 if(!class_exists('itxsl_Slider')) {
 
 	class itxsl_Slider {
@@ -119,7 +121,11 @@ if(!class_exists('itxsl_Slider')) {
 			add_filter('acf/settings/path', 'itxsl_acf_settings_path');
 			add_filter('acf/settings/dir', 'itxsl_acf_settings_dir');
 			add_filter('acf/settings/show_admin', 'itxsl_acf_show_admin');
-			//if(!defined('ACF_LITE')) define('ACF_LITE', true);
+			if(!defined('ACF_LITE')) define('ACF_LITE', true);
+
+			add_filter('body_class', array(&$this, 'itxsl_add_body_class')); 
+
+
 		}
 
 
@@ -145,7 +151,30 @@ if(!class_exists('itxsl_Slider')) {
     }
 
   
+    public function itxsl_add_body_class( $classes ) {
 
+    	$post = get_post();
+
+			$page_slider_ID = get_post_meta(get_the_ID($post), 'itxsl_page_slider');
+
+			$slider_ID = 0;
+
+			if(!empty($page_slider_ID))
+				{
+					if($page_slider_ID[0]!="null")
+						$slider_ID = $page_slider_ID[0];
+				}
+			else
+				$slider_ID = $this->itxsl_get_option('itxsl_header_slider_id');
+			
+	
+			if($slider_ID)
+				return array_merge($classes, array('with-itxslider'));
+			else
+				return $classes;
+ 
+
+    }
 
     function itxsl_render_slider_meta_box_content()
 	{
@@ -294,6 +323,7 @@ if(!class_exists('itxsl_Slider')) {
 				<div class="itxsl-slider">
 		  		<div class="itxsl-container"><div class="itxsl-overlay"></div><ul>';
 
+		  $slider_dots ='<ul class="itxsl-dots-container">';
 
 		  if(isset($args['id']))
 		  	$this->slider_id = (int)$args['id'];
@@ -311,22 +341,89 @@ if(!class_exists('itxsl_Slider')) {
 
 		  			$image = wp_get_attachment_image_src( get_post_thumbnail_id( (int)$slide->ID ), 'single-post-thumbnail');
 		  			
-		  			//get_field('itxsl_slide_text_position',$slide->ID);
 
-						$output .= "<li class='itxsl-slide' id='itxsl_slide_$slide->ID'/><div class='itxsl-slide-background nozoomin' style=\"background-image: url('$image[0]');\"></div>
-						<div class='itxsl-slide-text' style=\"
+		  			$title_show = get_field('itxsl_slide_title_show',$slide->ID);
+		  			$desc_show = get_field('itxsl_slide_desc_show',$slide->ID);
+
+		  			print_r($title_show[0]);
+
+		  			if($title_show[0])
+		  			{
+
+		  			$position = get_field('itxsl_slide_text_position',$slide->ID);
+
+		  			$position = explode("-", $position);
+
+
+		  			$valign = $position[0];
+		  			$align = $position[1];
+
+		  			switch ($align) {
+		  				case 'left':
+		  					$box_align_style = "padding-left: 5%; left: 0 px;";
+		  					$text_align_style = "text-align: left;";
+		  					$translate = "";
+		  					break;
+		  				case 'center':
+		  					$translate = "translateX(-50%) ";
+		  					$box_align_style = "left: 50%;";
+		  					$text_align_style = "text-align: center;";
+		  					break;
+		  				case 'right':
+		  					$translate="";
+		  					$box_align_style = "padding-right: 5%; right: 0px; ";
+		  					$text_align_style = "text-align: right;";
+		  					break;
+		  				
+		  				default:
+		  					$box_align_style = "";
+		  					$text_align_style = "text-align: center;";
+		  					break;
+		  			}
+
+		  			switch ($valign) {
+		  				case 'top':
+		  					$box_valign_style = "top: 0 px;";
+		  					$text_valign_style = "";
+		  					break;
+		  				case 'middle':
+		  					$box_valign_style = "top: 50%; transform: $translate translateY(-50%);";
+		  					$text_valign_style = "";
+		  					break;
+		  				case 'bottom':
+		  					$box_valign_style = "bottom: 0px; ";
+		  					$text_valign_style = "";
+		  					break;
+		  				
+		  				default:
+		  					$box_align_style = "top: 50%; transform: $translate translateY(-50%);";
+		  					$text_align_style = "";
+		  					break;
+		  			}
+
+		  			$output .= "<li class='itxsl-slide' id='itxsl_slide_$slide->ID'/><div class='itxsl-slide-background nozoomin' style=\"background-image: url('$image[0]');\"></div>
+						<div class='itxsl-slide-text' style=\" display: table;  $box_align_style $box_valign_style
 						
-						\"><H1 style=\"
+						\"><H1 style=\" $text_align_style 
 						color: ".get_field('itxsl_slide_title_color',$slide->ID)." ;
 						font-size: ".get_field('itxsl_slide_title_font_size',$slide->ID)." ;
-						\">".$slide->post_title."</H1><HR><P style=\"
+						\">".$slide->post_title."</H1><HR><P style=\" $text_align_style
 						color: ".get_field('itxsl_slide_description_color',$slide->ID)." ;
 						font-size: ".get_field('itxsl_slide_description_font_size',$slide->ID)." ;
 						\">".$slide->post_content."</P></div></li>";
 
+		  			}
+		  			else
+		  			{
+		  				$output .= "<li class='itxsl-slide' id='itxsl_slide_$slide->ID'/><div class='itxsl-slide-background nozoomin' style=\"background-image: url('$image[0]');\"></div></li>";
+		  			}		
+
+		  			$slider_dots .= "<li class='itxsl-dot' id='itxsl_dot_$slide->ID'/></li>";
+
 		  }
 
-		  $output .= "</ul></div></div></div>";
+		  $slider_dots .= "</ul>";
+		  $output .= "</ul>$slider_dots<div id='prev-button'>PREV</div><div id='next-button'>NEXT</div></div></div></div>";
 		  
 		  return $output;
 		  
